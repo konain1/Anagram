@@ -18,7 +18,7 @@ let transactions = [
     id:2,
     timestamp:1656076800001,
     price:12,
-    category:"Food",
+    category:"Fast food",
     itemName:"Pizza"
   },
   {
@@ -49,18 +49,12 @@ function calculateTotalSpentByCategory(transactions) {
 
 let result = calculateTotalSpentByCategory(transactions)
 
-console.log(typeof result)
-
-// for (let key in result) {
-//   if (result.hasOwnProperty(key)) {
-//     console.log(key, result[key]);
-//   }
-// }
 
 
+for (const key in result) {
+  
+  console.log(key + " " + result[key] + " " + key + " "+ result[key] )
+}
 
-Object.keys(result).forEach(key => {
-  // key is the property name
-  // myObject[key] is the property value
-  console.log(key, result[key]);
-});
+
+
